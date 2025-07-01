@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dynamic Table Generator</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+ 
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">📊 TableGen</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </div>
+  </nav>
+
+]
+  <section class="info-section">
+    <h2>About This Tool</h2>
+    <p>This dynamic table generator helps you easily create and manage custom tables right in your browser. You can add or remove rows and columns, and directly edit any cell. It’s perfect for small data sets, project planning, or school assignments — all without any coding!</p>
+  </section>
+
+
+  <div class="container">
+    <h1>Dynamic Table Generator</h1>
+
+    <div class="controls">
+      <button onclick="addRow()">➕ Add Row</button>
+      <button onclick="addColumn()">➕ Add Column</button>
+      <button onclick="removeRow()">➖ Remove Row</button>
+      <button onclick="removeColumn()">➖ Remove Column</button>
+    </div>
+
+    <div class="table-wrapper">
+      <table id="dynamicTable">
+        <thead>
+          <tr>
+            <th contenteditable="true">Header 1</th>
+            <th contenteditable="true">Header 2</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td contenteditable="true">Cell 1</td>
+            <td contenteditable="true">Cell 2</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+  <footer class="footer">
+    <p>⚡ Built with ❤️ by Chandra Prakash Singh — MERN Stack Developer</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
